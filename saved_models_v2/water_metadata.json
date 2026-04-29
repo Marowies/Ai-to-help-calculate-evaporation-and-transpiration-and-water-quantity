@@ -1,0 +1,62 @@
+{
+  "target": "WaterAmount_m3",
+  "numerical_features": [
+    "T2M_MAX",
+    "T2M_MIN",
+    "T_mean",
+    "RH2M",
+    "WS2M",
+    "PS",
+    "Rn",
+    "G",
+    "FieldCapacity",
+    "WiltingPoint",
+    "RootDepth"
+  ],
+  "categorical_features": [
+    "CROP",
+    "GrowthStage",
+    "SOIL_TEX"
+  ],
+  "train_metrics": {
+    "MAE": 0.1338,
+    "RMSE": 0.175,
+    "R2": 0.9998,
+    "MAPE": 0.64
+  },
+  "test_metrics": {
+    "MAE": 0.1455,
+    "RMSE": 0.1907,
+    "R2": 0.9997,
+    "MAPE": 0.7
+  },
+  "cv_r2_mean": 0.9997,
+  "cv_r2_std": 0.0,
+  "feature_importance": {
+    "T2M_MAX": 0.4067,
+    "GrowthStage_Seedling": 0.1999,
+    "Rn": 0.1491,
+    "T_mean": 0.0908,
+    "GrowthStage_Flowering": 0.0516,
+    "GrowthStage_Vegetative": 0.0291,
+    "GrowthStage_Maturity": 0.0254,
+    "WS2M": 0.0248,
+    "RH2M": 0.0194,
+    "PS": 0.0018,
+    "T2M_MIN": 0.0013,
+    "FieldCapacity": 0.0,
+    "SOIL_TEX_Silt": 0.0,
+    "WiltingPoint": 0.0,
+    "G": 0.0,
+    "SOIL_TEX_SAND": 0.0,
+    "RootDepth": 0.0,
+    "CROP_Spinach": 0.0,
+    "SOIL_TEX_CLAY": 0.0
+  },
+  "model_type": "XGBRegressor",
+  "training_samples": 122736,
+  "test_samples": 30684,
+  "area_m2": 4200,
+  "conversion_factor": 4.2,
+  "note": "WaterAmount_m3 = Etc * 4.2 (area=4200m2, /1000 for mm->m3 conversion)"
+}
