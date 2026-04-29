@@ -66,14 +66,7 @@ npm run dev
 
 ---
 
-## 🌐 Deployment
 
-The project is ready for deployment on **Render** or **Railway**.
-
-1. **Backend:** Deploy `api_v2.py` as a Web Service.
-2. **Frontend:** Deploy as a Static Site, ensuring `VITE_API_URL` environment variable points to your backend URL.
-
----
 
 ## 👨‍💻 Developed By
 
